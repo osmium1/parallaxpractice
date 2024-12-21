@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roboto-light {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1000px;
+}
+
+#header {
+    position:relative;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background, .foreground {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.background {
+    z-index: -2;
+    transform: translateZ(-2000px) scale(3.1)
+}
+
+.foreground {
+    z-index: -1;
+    transform: translateZ(-250px) scale()
+}
+
+section {
+    background-color: black;
+    padding:5rem 0;
+}
+
+.secheading {
+    position: absolute;
+    left: 37.5%;
+    top: 41%;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    background-color: rgba(56, 56, 56, 0.411);
+    box-sizing: content-box;
+    padding: 32px;
+    border-radius: 11px;
+}
+
+.secbackground {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    height:500px;
+    object-fit: cover;
+}
+
+.bg1 {
+    background-image: url(bg1.jpg);
+}
+
+.bg2 {
+    background-image: url(bg2.jpg);
+}
+
+.bg3 {
+    background-image: url(bg3.jpg);
+}
+
+.subheading {
+    color: rgba(255, 255, 255, 0.849);
+    text-shadow: 3px black;
+    font-size:5rem;
+    padding:0 10rem;
+}
+
+.text {
+    color: rgba(255, 255, 255, 0.849);
+    font-size:1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+    height:14em;
+}
+
+#mainHeading {
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 13vh;
+    translate: 0% -200%;
+}
